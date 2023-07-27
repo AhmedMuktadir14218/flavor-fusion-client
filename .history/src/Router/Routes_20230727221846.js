@@ -8,7 +8,7 @@ import Main from "../Layout/Main";
       element: <Main></Main>,
       children:[{
         
-        path:'/',
+        path:'/';
       }
       ]
     },
