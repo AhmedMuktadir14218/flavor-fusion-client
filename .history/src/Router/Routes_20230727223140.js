@@ -9,6 +9,7 @@ import Main from "../Layout/Main";
       children:[{
         
         path:'/',
+        element:<Ho
       }
       ]
     },
