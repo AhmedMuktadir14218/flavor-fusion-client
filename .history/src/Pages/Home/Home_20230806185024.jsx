@@ -7,7 +7,7 @@ const Home = () => {
         <div>
             <Banner></Banner>
             <Category></Category>
-            <PopularMenu></PopularMenu>
+            <PopularMenu
             {/* <h1>This is Home</h1> */}
         </div>
     );
