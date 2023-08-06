@@ -2,7 +2,7 @@
 const Footer = () => {
 
     const currentYear = new Date().getFullYear();
-    const currDay = new Date().getMonth();
+    const currDAy = new Date().getMonth();
     const currMonth = new Date().toLocaleString([], {
         month: 'long',  });
     return (
@@ -23,7 +23,7 @@ const Footer = () => {
             </div>
             <div className="p-4 footer-center bg-base-300 text-base-content">
                     <div>
-                        <p>Copyright © {currMonth} {currDay} , {currentYear} - All right reserved by ACME Industries Ltd</p>
+                        <p>Copyright © {currMonth} in {currentYear} - All right reserved by ACME Industries Ltd</p>
                     </div>
                 </div>
         </footer>

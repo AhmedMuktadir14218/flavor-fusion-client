@@ -23,7 +23,7 @@ const Footer = () => {
             </div>
             <div className="p-4 footer-center bg-base-300 text-base-content">
                     <div>
-                        <p>Copyright © {currMonth} {currDay} , {currentYear} - All right reserved by ACME Industries Ltd</p>
+                        <p>Copyright © {currMonth} {currMonth} in {currentYear} - All right reserved by ACME Industries Ltd</p>
                     </div>
                 </div>
         </footer>
