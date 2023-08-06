@@ -11,7 +11,7 @@ const Home = () => {
             <Category></Category>
             <PopularMenu></PopularMenu>
             <Featured></Featured>
-            <Testimonials></Testimonials>
+            <Testimonials
             {/* <h1>This is Home</h1> */}
         </div>
     );
