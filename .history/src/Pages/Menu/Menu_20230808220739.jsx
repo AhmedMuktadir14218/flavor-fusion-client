@@ -5,8 +5,7 @@ import { Helmet } from "react-helmet-async";
 const Menu = () => {
     return (
         <div>
-            <Helmet><title>FlavourFusion | Menu </title></Helmet>
-            
+           
             <h1>meny</h1>            
         </div>
     );
