@@ -4,7 +4,7 @@ const NavBar = () => {
 
     const navOptions = <>
         <li><a>Item 555</a></li>
-        <li><Link to='/menu'>Menu</Link></li>
+        <li><Link t></Link></li>
         <li><a>Item 3</a></li>
     </>
 
@@ -20,7 +20,7 @@ const NavBar = () => {
         {navOptions}
       </ul>
     </div>
-    <a className="btn btn-ghost normal-case text-xl"></a>
+    <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
