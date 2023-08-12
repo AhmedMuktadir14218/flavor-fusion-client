@@ -8,7 +8,7 @@ import Testimonials from "./Testimonials/Testimonials";
 const Home = () => {
     return (
         <div>
-            <h1>home</h1>
+            h
               <Helmet><title>FlavourFusion | Home</title></Helmet>
             
             <Banner></Banner>
