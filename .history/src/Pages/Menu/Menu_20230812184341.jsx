@@ -7,7 +7,8 @@ const Menu = () => {
     return (
         <div>
             <Helmet><title>FlavourFusion | Menu </title></Helmet>
-            <Cover img={MenuBanner} title={"Our Menu"}></Cover>           
+import MenuBanner from "../../assets/menu/banner3.jpg";
+            <Cover  ></Cover>           
         </div>
     );
 };

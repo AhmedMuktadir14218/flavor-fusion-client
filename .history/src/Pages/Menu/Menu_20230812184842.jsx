@@ -7,7 +7,7 @@ const Menu = () => {
     return (
         <div>
             <Helmet><title>FlavourFusion | Menu </title></Helmet>
-            <Cover img={MenuBanner} title={"Our Menu"}></Cover>           
+            <Cover img={MenuBanner} tit></Cover>           
         </div>
     );
 };
