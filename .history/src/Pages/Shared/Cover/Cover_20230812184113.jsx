@@ -1,9 +1,9 @@
 
 
-const Cover = (img,title) => {
+const Cover = () => {
     return (
         <div>
-            <div className="hero min-h-screen" style={{backgroundImage: `url(${img})`}}>
+            <div className="hero min-h-screen" style={{backgroundImage: `url($)`}}>
   <div className="hero-overlay bg-opacity-60"></div>
   <div className="hero-content text-center text-neutral-content">
     <div className="max-w-md">
