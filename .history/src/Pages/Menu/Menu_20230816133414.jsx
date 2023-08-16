@@ -9,8 +9,6 @@ const Menu = () => {
             <Helmet><title>FlavourFusion | Menu </title></Helmet>
             <Cover img={MenuBanner} title={"Our Menu"}></Cover>   
             <PopularMenu></PopularMenu>        
-            <Cover img={MenuBanner} title={"Our Menu"}></Cover>   
-            <PopularMenu></PopularMenu>        
         </div>
     );
 };
