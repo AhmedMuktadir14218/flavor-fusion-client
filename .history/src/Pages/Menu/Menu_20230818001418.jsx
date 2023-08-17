@@ -39,9 +39,21 @@ const Menu = () => {
       ></MenuCategory>
       <MenuCategory items={pizza} title={"pizza"} img={pizzaImg}></MenuCategory>
       <MenuCategory items={salad} title={"salad"} img={saladImg}></MenuCategory>
-      <MenuCategory  items={soup} title={"soup"} img={soupImg}></MenuCategory>
+      <MenuCategory items={soup} title={"soup"} img={soupImg}></MenuCategory>
     
- 
+      <MenuCategory className="featured-item bg-fixed text-white pt-8 my-20 ">
+           <div>
+             <SectionTitle subHeading="check it out" heading="Featured Item" ></SectionTitle>
+            <div className="md:flex justify-center items-center bg-slate-500 bg-opacity-60 pb-20 pt-12 px-36">
+                <div>
+                    <img src={pizzaImg} alt="" />
+                </div>
+                <div className="md:ml-10">
+
+                </div>
+            </div>
+           </div>
+        </div>
     
     </div>
   );
