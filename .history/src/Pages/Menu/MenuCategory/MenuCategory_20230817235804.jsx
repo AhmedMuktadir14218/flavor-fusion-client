@@ -1,5 +1,7 @@
-import Cover from "../../Shared/Cover/Cover";
 
+import { Link } from 'react-router-dom';
+import Cover from '../../Shared/Cover/Cover';
+import MenuItem from '../../Shared/MenuItem/MenuItem';
 
 const MenuCategory = ({items, title, img}) => {
     return (

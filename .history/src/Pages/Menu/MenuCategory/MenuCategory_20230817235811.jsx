@@ -1,4 +1,3 @@
-import Cover from "../../Shared/Cover/Cover";
 
 
 const MenuCategory = ({items, title, img}) => {
