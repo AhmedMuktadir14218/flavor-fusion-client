@@ -7,9 +7,9 @@ import MenuItem from "../Shared/MenuItem/MenuItem";
 import MenuCategory from "./MenuCategory/MenuCategory";
 import menuImg from "../../assets/menu/menu-bg.png";
 import dessertImg from "../../assets/menu/dessert-bg.jpeg";
-import pizzaImg from "../../assets/menu/pizza-bg.jpg";
-import saladImg from "../../assets/menu/salad-bg.jpg";
-import soupImg from "../../assets/menu/soup-bg.jpg";
+import pizza from "../../assets/menu/pizza-bg.jpg";
+import menuImg from "../../assets/menu/salad-bg.jpg";
+import menuImg from "../../assets/menu/soup-bg.jpg";
 // import PopularMenu from "../Home/PopularMenu/PopularMenu";
 
 const Menu = () => {

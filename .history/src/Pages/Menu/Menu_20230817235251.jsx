@@ -4,16 +4,9 @@ import MenuBanner from "../../assets/menu/banner3.jpg";
 import useMenu from "../../Hooks/useMenu";
 import SectionTitle from "../../Components/SectionTitle";
 import MenuItem from "../Shared/MenuItem/MenuItem";
-import MenuCategory from "./MenuCategory/MenuCategory";
-import menuImg from "../../assets/menu/menu-bg.png";
-import dessertImg from "../../assets/menu/dessert-bg.jpeg";
-import pizzaImg from "../../assets/menu/pizza-bg.jpg";
-import saladImg from "../../assets/menu/salad-bg.jpg";
-import soupImg from "../../assets/menu/soup-bg.jpg";
 // import PopularMenu from "../Home/PopularMenu/PopularMenu";
 
-const Menu = () => {
-    const [menu] = useMenu();
+const [menu] = useMenu();
     const desserts = menu.filter(item => item.category === 'dessert');
     const soup = menu.filter(item => item.category === 'soup');
     const salad = menu.filter(item => item.category === 'salad');
@@ -35,7 +28,3 @@ const Menu = () => {
             <MenuCategory items={salad} title={"salad"} img={saladImg}></MenuCategory>
             <MenuCategory items={soup} title={"soup"} img={soupImg}></MenuCategory>
         </div>
-    );
-};
-
-export default Menu;
