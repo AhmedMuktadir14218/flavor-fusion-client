@@ -1,5 +1,5 @@
 
-const MenuCategory = () => {
+const useMenu = () => {
     return (
         <div>
             
@@ -7,4 +7,4 @@ const MenuCategory = () => {
     );
 };
 
-export default MenuCategory;
+export default useMenu;
