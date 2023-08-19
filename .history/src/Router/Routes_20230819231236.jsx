@@ -21,8 +21,8 @@ import Order from "../Pages/Order/Order/Order";
       },
       {
         
-        path:'/order',
-        element:<Order></Order>
+        path:'/menu',
+        element:<Order
       },
       ]
     },
