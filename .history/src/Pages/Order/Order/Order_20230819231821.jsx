@@ -3,7 +3,7 @@ import Cover from "../../Shared/Cover/Cover";
 const Order = () => {
     return (
         <div>
-            <Cover img={ordercover} title={"Order Food"}></Cover>
+            <Cover img={ordercover} titlr></Cover>
         </div>
     );
 };
