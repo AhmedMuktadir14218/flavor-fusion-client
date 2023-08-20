@@ -4,7 +4,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import "swiper/css/pagination";
-import FoodCart from '../../../Components/FoodCart';
 
 const OrderTab = ({ items }) => {
     const pagination = {
