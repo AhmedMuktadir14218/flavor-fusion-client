@@ -17,7 +17,7 @@ const OrderTab = ({ items }) => {
 
             <Swiper
                 pagination={pagination}
-                modules={[pagination]}
+                modules={[paginatio]}
                 className="mySwiper"
             >
                 <SwiperSlide>
