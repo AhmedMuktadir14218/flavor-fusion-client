@@ -1,6 +1,5 @@
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -21,8 +20,8 @@ const OrderTab = ({ items }) => {
         <div >
 
             <Swiper
-                pagination={pagination}
-                modules={[Pagination]}
+                // pagination={pagination}
+                // modules={[pagination]}
                 className="mySwiper"
             >
                 <SwiperSlide>

@@ -1,13 +1,4 @@
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
-
 import FoodCart from '../../../Components/FoodCart';
 
 const OrderTab = ({ items }) => {
@@ -22,7 +13,7 @@ const OrderTab = ({ items }) => {
 
             <Swiper
                 pagination={pagination}
-                modules={[Pagination]}
+                modules={[pagination]}
                 className="mySwiper"
             >
                 <SwiperSlide>

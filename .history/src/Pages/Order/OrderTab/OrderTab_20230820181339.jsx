@@ -1,6 +1,7 @@
+// import Swiper core and required modules
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -22,7 +23,7 @@ const OrderTab = ({ items }) => {
 
             <Swiper
                 pagination={pagination}
-                modules={[Pagination]}
+                modules={[pagination]}
                 className="mySwiper"
             >
                 <SwiperSlide>
