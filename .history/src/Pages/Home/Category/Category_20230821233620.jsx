@@ -24,7 +24,15 @@ const Category = () => {
     //     centeredSlides={true}
     //     pagination={{
     //       clickable: true,
-  
+    //     }}
+    //     modules={[Pagination]}
+    //     className="mySwiper mb-24"
+    //   >
+
+   
+   
+    //     </SwiperSlide>
+      
     //   </Swiper>
     // </>
     <section>
