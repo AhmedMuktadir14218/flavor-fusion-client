@@ -7,7 +7,7 @@ const PopularMenu = () => {
   const [menu]=useMenu();
   const popular =menu.filter(item => item.category === 'popular')
     
-//         .then(data => {
+
     //             const popularItems = data.filter(item => item.category === 'popular');
     //             setMenu(popularItems)
     //         })
