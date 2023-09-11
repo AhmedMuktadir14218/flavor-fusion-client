@@ -60,7 +60,7 @@ const Order = () => {
 const categories = ['salad', 'pizza', 'soup', 'dessert', 'drinks'];
 const { category } = useParams();
 const initialIndex = categories.indexOf(category);
-const [tabIndex, setTabIndex] = useState(0);
+const [tabIndex, setTabIndex] = useState(initialIndex);
 const [menu] = useMenu();
 
 const desserts = menu.filter((item) => item.category === "dessert");
@@ -77,7 +77,7 @@ return (
         </Helmet>
         <Cover img={orderCoverImg} title="Order Food"></Cover>
         {/* <Tabs defaultIndex={tabIndex} onSelect={(index) => setTabIndex(index)}> */}
-        <Tabs defaultIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
+        <Tabs defaultIndex={1} onSelect={(index) => console.log(index)}>
             <TabList className="text-center justify-center">
                 <Tab>Salad</Tab>
                 <Tab>Pizza</Tab>

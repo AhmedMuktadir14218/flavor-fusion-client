@@ -77,7 +77,7 @@ return (
         </Helmet>
         <Cover img={orderCoverImg} title="Order Food"></Cover>
         {/* <Tabs defaultIndex={tabIndex} onSelect={(index) => setTabIndex(index)}> */}
-        <Tabs defaultIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
+        <Tabs defaultIndex={1} onSelect={(index) => setTabIndex(index)}>
             <TabList className="text-center justify-center">
                 <Tab>Salad</Tab>
                 <Tab>Pizza</Tab>
