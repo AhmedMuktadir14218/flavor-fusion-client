@@ -4,7 +4,7 @@ import Cover from "../../Shared/Cover/Cover";
 import 'react-tabs/style/react-tabs.css';
 import OrderTab from "../OrderTab/OrderTab";
 import { useParams } from "react-router-dom";
-import {   useState } from "react";
+import { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import useMenu from "../../../Hooks/useMenu";
 const Order = () => {
@@ -60,9 +60,8 @@ const Order = () => {
 const categories = ['salad', 'pizza', 'soup', 'dessert', 'drinks'];
 const { category } = useParams();
 const initialIndex = categories.indexOf(category);
-const [tabIndex, setTabIndex] = useState(initialIndex);
-const [menu] = useMenu();
-
+const [tabIndex, setTabIndex] = useState(0);
+// const [menu] = useMenu();
 const desserts = menu.filter((item) => item.category === "dessert");
   const soup = menu.filter((item) => item.category === "soup");
   const salad = menu.filter((item) => item.category === "salad");

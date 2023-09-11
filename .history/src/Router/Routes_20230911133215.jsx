@@ -16,12 +16,11 @@ import Order from "../Pages/Order/Order/Order";
       },
       {
         
-        path:'menu',
+        path:'/menu',
         element:<Menu></Menu>
       },
       {
         
-        // path:'order/:category',
         path:'/order',
         element:<Order></Order>
       },

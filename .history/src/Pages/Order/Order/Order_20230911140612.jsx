@@ -4,7 +4,7 @@ import Cover from "../../Shared/Cover/Cover";
 import 'react-tabs/style/react-tabs.css';
 import OrderTab from "../OrderTab/OrderTab";
 import { useParams } from "react-router-dom";
-import {   useState } from "react";
+import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import useMenu from "../../../Hooks/useMenu";
 const Order = () => {
