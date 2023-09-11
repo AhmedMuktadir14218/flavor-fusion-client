@@ -72,7 +72,7 @@ const desserts = menu.filter((item) => item.category === "dessert");
 return (
     <div>
         <Helmet>
-            <title>  Order Food</title>
+            <title>Bistro Boss | Order Food</title>
         </Helmet>
         <Cover img={orderCoverImg} title="Order Food"></Cover>
         <Tabs defaultIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>

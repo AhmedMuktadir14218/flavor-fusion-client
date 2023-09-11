@@ -67,12 +67,12 @@ const desserts = menu.filter((item) => item.category === "dessert");
   const salad = menu.filter((item) => item.category === "salad");
   const pizza = menu.filter((item) => item.category === "pizza");
   const drinks = menu.filter((item) => item.category === "drinks");
-  console.log(menu);
+  console.log()
 
 return (
     <div>
         <Helmet>
-            <title>  Order Food</title>
+            <title>Bistro Boss | Order Food</title>
         </Helmet>
         <Cover img={orderCoverImg} title="Order Food"></Cover>
         <Tabs defaultIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
