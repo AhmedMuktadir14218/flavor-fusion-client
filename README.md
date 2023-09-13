@@ -1,2 +1,2 @@
 Flavo-Fusion 
-it's a online restaurant based website.
+It's a online restaurant based website.

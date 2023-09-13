@@ -8,6 +8,11 @@ import {   useState } from "react";
 import { Helmet } from "react-helmet-async";
 import useMenu from "../../../Hooks/useMenu";
 const Order = () => {
+
+//     const { category } = useParams();
+//     const initialIndex = categories.indexOf(category);
+//     const [tabIndex, setTabIndex] = useState(initialIndex);
+//     const [menu] = useMenu();
     
 //     const desserts = menu.filter(item => item.category === 'dessert');
 //     console.log(desserts);
