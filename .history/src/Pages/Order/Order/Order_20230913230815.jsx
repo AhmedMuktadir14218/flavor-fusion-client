@@ -9,6 +9,12 @@ import { Helmet } from "react-helmet-async";
 import useMenu from "../../../Hooks/useMenu";
 const Order = () => {
     
+//             </Tabs>
+//         </div>
+//     );
+// };
+
+// export default Order;
 
 const categories = ['salad', 'pizza', 'soup', 'dessert', 'drinks'];
 const { category } = useParams();
