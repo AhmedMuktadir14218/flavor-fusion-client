@@ -9,6 +9,13 @@ import { Helmet } from "react-helmet-async";
 import useMenu from "../../../Hooks/useMenu";
 const Order = () => {
     
+//                     <Tab>Salad</Tab>
+//                     <Tab>Pizza</Tab>
+//                     <Tab>Soup</Tab>
+//                     <Tab>Dessert</Tab>
+//                     <Tab>Drinks</Tab>
+//                 </TabList>
+//                 <TabPanel>
 //                     <OrderTab items={salad}></OrderTab>
 //                 </TabPanel>
 //                 <TabPanel>
