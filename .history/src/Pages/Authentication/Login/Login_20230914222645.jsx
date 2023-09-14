@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { loadCaptchaEnginge } from "react-simple-captcha";
-import { LoadCanvasTemplate,  validateCaptcha } from 'react-simple-captcha';
+import { LoadCanvasTemplate, LoadCanvasTemplateNoReload, validateCaptcha } from 'react-simple-captcha';
 
 const Login = () => {
     const [disabled, setDisabled] = useState(true);

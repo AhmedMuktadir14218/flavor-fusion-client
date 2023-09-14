@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { loadCaptchaEnginge } from "react-simple-captcha";
-import { LoadCanvasTemplate,  validateCaptcha } from 'react-simple-captcha';
 
 const Login = () => {
     const [disabled, setDisabled] = useState(true);
@@ -76,7 +75,7 @@ const Login = () => {
                             </div>
                             <div className="form-control">
                                 <label className="label">
-                                       <LoadCanvasTemplate/>  
+                                      {/* <LoadCanvasTemplate/>  */}
                                 </label>
                                 <input  onBlur={handleValidateCaptcha} type="text" name="captcha" placeholder="type the captcha above" className="input input-bordered" />
 
