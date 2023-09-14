@@ -30,7 +30,7 @@ import Login from "../Pages/Authentication/Login/Login";
         
         path:'login',
         // path:'/order',
-        element:<Login></Login>
+        element:<Login
       },
       ]
     },
