@@ -11,7 +11,7 @@ const Main = () => {
 
             {noFootNav || <NavBar></NavBar>}
             <Outlet></Outlet>
-            {noFootNav || <Footer></Footer>}
+            {<Footer></Footer>}
         </div>
     );
 };

@@ -37,7 +37,7 @@ import SignUp from "../Pages/Authentication/Login/SignUp/SignUp";
         
         path:'signup',
         // path:'/order',
-        element:<SignUp></SignUp>
+        element:<SignUp
       },
       ]
     },
