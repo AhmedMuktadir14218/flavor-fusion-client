@@ -1,7 +1,7 @@
 import { createContext } from "react";
 import { useState } from "react";
 import { getAuth } from 'firebase/auth';
-import   app  from '../Firebase/firebase.config';
+import   app  from '../';
 
 
 export const AuthContext =createContext(null);
@@ -17,9 +17,9 @@ const AuthProvider = ({children}) => {
         loading
     }
     return (
-        <AuthContext.Provider value={authInfo}>
+        <AuthProvider value={authInfo}>
             {children}
-        </AuthContext.Provider>
+        </AuthProvider>
     );
 };
 
