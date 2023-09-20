@@ -3,7 +3,6 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { loadCaptchaEnginge } from "react-simple-captcha";
 import { LoadCanvasTemplate,  validateCaptcha } from 'react-simple-captcha';
-import { AuthContext } from "../../../Context/AuthProvider";
 
 const Login = () => {
     const [disabled, setDisabled] = useState(true);
@@ -20,16 +19,6 @@ const Login = () => {
         const email = form.email.value;
         const password = form.password.value;
         console.log(email, password);
-        loginUser(email,password)
-        .then( userCredential => {
-            // Signed in 
-            const loggedUser = userCredential.user;
-            console.log(loggedUser)
-            // ...
-          })
-          .catch( error => {
-            console.log(error)
-          });
 
         // signIn(email, password)
         //     .then(result => {
