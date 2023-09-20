@@ -6,7 +6,7 @@ import { AuthContext } from "../../../../Context/AuthProvider";
 const SignUp = () => {
     // const [disabled, setDisabled] = useState(true);
 
-const {user , createUser}=useContext(AuthContext)
+const {user,createUser}=useContext(AuthContext)
 
     const handleLogin = event => {
         event.preventDefault();

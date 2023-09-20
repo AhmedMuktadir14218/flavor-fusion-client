@@ -6,7 +6,7 @@ import { AuthContext } from "../../../../Context/AuthProvider";
 const SignUp = () => {
     // const [disabled, setDisabled] = useState(true);
 
-const {user , createUser}=useContext(AuthContext)
+const {user,createUser}=useContext(AuthContext)
 
     const handleLogin = event => {
         event.preventDefault();
@@ -15,16 +15,7 @@ const {user , createUser}=useContext(AuthContext)
         const email = form.email.value;
         const password = form.password.value;
         console.log(name, email, password);
-        createUser(email,password)
-        .then( userCredential => {
-            // Signed in 
-            const loggedUser = userCredential.user;
-            console.log(loggedUser)
-            // ...
-          })
-          .catch( error => {
-            console.log(error)
-          });
+        createUser
         // signIn(email, password)
         //     .then(result => {
         //         const user = result.user;
