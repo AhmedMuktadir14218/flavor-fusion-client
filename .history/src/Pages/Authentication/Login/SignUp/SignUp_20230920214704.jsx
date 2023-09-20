@@ -1,8 +1,11 @@
+import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
+import { loadCaptchaEnginge } from "react-simple-captcha";
+import { LoadCanvasTemplate,  validateCaptcha } from 'react-simple-captcha';
 
 const SignUp = () => {
-    // const [disabled, setDisabled] = useState(true);
+    const [disabled, setDisabled] = useState(true);
 
 
 
@@ -66,7 +69,7 @@ const SignUp = () => {
                             </div>
                            
                             <div className="form-control mt-6">
-                                <input  className="btn btn-primary" type="submit" value="SignUp" />
+                                <input  disabled={disabled}  className="btn btn-primary" type="submit" value="SignUp" />
                             </div>
                         </form>
                         <p><small>Already have an Account? <Link to="/login">Login</Link> </small></p>
