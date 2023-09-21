@@ -20,7 +20,7 @@ const AuthProvider = ({children}) => {
     }
 
     const logOut =()=>{
-        signOut(Auth);
+        signOut()
     }
 
     useEffect(() => {
@@ -39,7 +39,7 @@ const AuthProvider = ({children}) => {
         user,
         createUser,
         loginUser,
-        logOut,
+
         loading
     }
     return (
