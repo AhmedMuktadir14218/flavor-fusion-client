@@ -44,7 +44,6 @@ const AuthProvider = ({children}) => {
         createUser,
         loginUser,
         logOut,
-        signWithGoolgle,
         loading
     }
     return (
