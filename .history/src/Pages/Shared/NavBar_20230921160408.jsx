@@ -33,9 +33,9 @@ const NavBar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    
+    <a className="btn">Button</a>
 
-    {user ? <Link>{user.email}</Link> : <Link to='/login' className="btn">Login</Link>}
+    {}
   </div>
 </div>
         </>
