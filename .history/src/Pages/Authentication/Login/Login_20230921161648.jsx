@@ -11,7 +11,7 @@ const Login = () => {
 
 
     useEffect(() => {
-        loadCaptchaEnginge(3);
+        loadCaptchaEnginge();
     }, [])
 
     const handleLogin = event => {
