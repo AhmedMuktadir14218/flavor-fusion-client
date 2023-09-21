@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../../Context/AuthProvider";
 
 const NavBar = () => {
-  const {user} = useContext(AuthContext);
+  const {usesr} = useContext(AuthContext);
 
     const navOptions = <>
         <li><Link to='/'>Home</Link></li>
