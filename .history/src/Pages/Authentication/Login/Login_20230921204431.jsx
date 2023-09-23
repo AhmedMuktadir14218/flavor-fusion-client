@@ -7,7 +7,7 @@ import { AuthContext } from "../../../Context/AuthProvider";
 
 const Login = () => {
     const [disabled, setDisabled] = useState(true);
-    const {user,loginUser,signWithGoolgle} = useContext(AuthContext)
+    const {user,loginUser} = useContext(AuthContext)
 
 
     useEffect(() => {
@@ -46,18 +46,6 @@ const Login = () => {
         //         });
         //         navigate(from, { replace: true });
         //     })
-    }
-    const handleGoogleLogin = ()=>{
-        signWithGoolgle()
-        .then( userCredential => {
-            // Signed in 
-            const loggedUser = userCredential.user;
-            console.log(loggedUser)
-            // ...
-          })
-          .catch( error => {
-            console.log(error)
-          });
     }
 
     const handleValidateCaptcha = (e) => {
@@ -109,7 +97,7 @@ const Login = () => {
                                 <input  disabled={disabled}  className="btn btn-primary" type="submit" value="Login" />
                             </div>
                             <div className="form-control mt-6">
-                                <button  onClick={handleGoogleLogin} className="btn btn-primary" >Login With Google</button>
+                                <input    className="btn btn-primary" type="submit" value="Login" />
                             </div>
                         </form>
                         <p><small>New Here? <Link to="/signup">Create an account</Link> </small></p>

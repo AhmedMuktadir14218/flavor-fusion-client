@@ -47,18 +47,7 @@ const Login = () => {
         //         navigate(from, { replace: true });
         //     })
     }
-    const handleGoogleLogin = ()=>{
-        signWithGoolgle()
-        .then( userCredential => {
-            // Signed in 
-            const loggedUser = userCredential.user;
-            console.log(loggedUser)
-            // ...
-          })
-          .catch( error => {
-            console.log(error)
-          });
-    }
+    const handleGoogleLogin
 
     const handleValidateCaptcha = (e) => {
         const user_captcha_value = e.target.value;

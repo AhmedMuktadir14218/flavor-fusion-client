@@ -7,7 +7,7 @@ import { AuthContext } from "../../../Context/AuthProvider";
 
 const Login = () => {
     const [disabled, setDisabled] = useState(true);
-    const {user,loginUser,signWithGoolgle} = useContext(AuthContext)
+    const {user,loginUser,"Login With Google"} = useContext(AuthContext)
 
 
     useEffect(() => {
@@ -46,18 +46,6 @@ const Login = () => {
         //         });
         //         navigate(from, { replace: true });
         //     })
-    }
-    const handleGoogleLogin = ()=>{
-        signWithGoolgle()
-        .then( userCredential => {
-            // Signed in 
-            const loggedUser = userCredential.user;
-            console.log(loggedUser)
-            // ...
-          })
-          .catch( error => {
-            console.log(error)
-          });
     }
 
     const handleValidateCaptcha = (e) => {

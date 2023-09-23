@@ -30,6 +30,16 @@ const Login = () => {
           .catch( error => {
             console.log(error)
           });
+        loginUser(email,password)
+        .then( userCredential => {
+            // Signed in 
+            const loggedUser = userCredential.user;
+            console.log(loggedUser)
+            // ...
+          })
+          .catch( error => {
+            console.log(error)
+          });
 
         // signIn(email, password)
         //     .then(result => {
@@ -46,18 +56,6 @@ const Login = () => {
         //         });
         //         navigate(from, { replace: true });
         //     })
-    }
-    const handleGoogleLogin = ()=>{
-        signWithGoolgle()
-        .then( userCredential => {
-            // Signed in 
-            const loggedUser = userCredential.user;
-            console.log(loggedUser)
-            // ...
-          })
-          .catch( error => {
-            console.log(error)
-          });
     }
 
     const handleValidateCaptcha = (e) => {

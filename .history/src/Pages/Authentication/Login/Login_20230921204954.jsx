@@ -49,15 +49,7 @@ const Login = () => {
     }
     const handleGoogleLogin = ()=>{
         signWithGoolgle()
-        .then( userCredential => {
-            // Signed in 
-            const loggedUser = userCredential.user;
-            console.log(loggedUser)
-            // ...
-          })
-          .catch( error => {
-            console.log(error)
-          });
+        .then
     }
 
     const handleValidateCaptcha = (e) => {
