@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { loadCaptchaEnginge } from "react-simple-captcha";
 import { LoadCanvasTemplate,  validateCaptcha } from 'react-simple-captcha';
 import { AuthContext } from "../../../Context/AuthProvider";
-import Swal from "sweetalert2";
 
 const Login = () => {
     const [disabled, setDisabled] = useState(true);
@@ -26,7 +25,7 @@ const Login = () => {
             // Signed in 
             const loggedUser = userCredential.user;
             console.log(loggedUser)
-            Swal.fire('Login Succesful')
+            
 
             // ...
           })

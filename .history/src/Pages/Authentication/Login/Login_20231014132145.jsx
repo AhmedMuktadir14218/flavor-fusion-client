@@ -26,7 +26,7 @@ const Login = () => {
             // Signed in 
             const loggedUser = userCredential.user;
             console.log(loggedUser)
-            Swal.fire('Login Succesful')
+            Swal.fire('Logi')
 
             // ...
           })
