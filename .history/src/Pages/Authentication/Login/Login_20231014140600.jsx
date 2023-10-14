@@ -63,7 +63,7 @@ const Login = () => {
             // Signed in 
             const loggedUser = userCredential.user;
             console.log(loggedUser)
-            navigate(from, { replace: true });
+            
             // ...
           })
           .catch( error => {
