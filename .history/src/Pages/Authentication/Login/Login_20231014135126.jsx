@@ -15,10 +15,10 @@ const Login = () => {
         loadCaptchaEnginge(3);
     }, [])
 
-    const navigate = useNavigate();
-  const location = useLocation();
+    let navigate = useNavigate();
+  let location = useLocation();
 
-  const from = location.state?.from?.pathname || "/";
+  let from = location.state?.from?.pathname || "/";
 
 
     const handleLogin = event => {
@@ -32,9 +32,8 @@ const Login = () => {
             // Signed in 
             const loggedUser = userCredential.user;
             console.log(loggedUser)
-            navigate(from, { replace: true });
             Swal.fire('Login Succesful')
-            
+
             // ...
           })
           .catch( error => {
