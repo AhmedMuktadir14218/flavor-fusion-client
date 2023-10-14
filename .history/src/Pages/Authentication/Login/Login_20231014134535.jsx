@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { loadCaptchaEnginge } from "react-simple-captcha";
 import { LoadCanvasTemplate,  validateCaptcha } from 'react-simple-captcha';
 import { AuthContext } from "../../../Context/AuthProvider";
@@ -15,12 +15,7 @@ const Login = () => {
         loadCaptchaEnginge(3);
     }, [])
 
-    let navigate = useNavigate();
-  let location = useLocation();
-  let auth = useAuth();
-
-  let from = location.state?.from?.pathname || "/";
-
+    
 
     const handleLogin = event => {
         event.preventDefault();
