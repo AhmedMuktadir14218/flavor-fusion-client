@@ -1,24 +1,30 @@
-import { useEffect, useState } from "react";
+import { useContext } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import { loadCaptchaEnginge } from "react-simple-captcha";
-import { LoadCanvasTemplate,  validateCaptcha } from 'react-simple-captcha';
+import { AuthContext } from "../../../../Context/AuthProvider";
 
 const SignUp = () => {
-    const [disabled, setDisabled] = useState(true);
+    // const [disabled, setDisabled] = useState(true);
 
-
-    useEffect(() => {
-        loadCaptchaEnginge(6);
-    }, [])
+const {user , createUser}=useContext(AuthContext)
 
     const handleLogin = event => {
         event.preventDefault();
         const form = event.target;
+        const name = form.name.value;
         const email = form.email.value;
         const password = form.password.value;
-        console.log(email, password);
-
+        console.log(name, email, password);
+        createUser(email,password)
+        .then( userCredential => {
+            // Signed in 
+            const loggedUser = userCredential.user;
+            console.log(loggedUser)
+            // ...
+          })
+          .catch( error => {
+            console.log(error)
+          });
         // signIn(email, password)
         //     .then(result => {
         //         const user = result.user;
@@ -71,7 +77,7 @@ const SignUp = () => {
                             </div>
                            
                             <div className="form-control mt-6">
-                                <input  disabled={disabled}  className="btn btn-primary" type="submit" value="SignUp" />
+                                <input  className="btn btn-primary" type="submit" value="SignUp" />
                             </div>
                         </form>
                         <p><small>Already have an Account? <Link to="/login">Login</Link> </small></p>
