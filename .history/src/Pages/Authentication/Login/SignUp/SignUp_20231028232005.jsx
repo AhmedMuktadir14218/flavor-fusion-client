@@ -30,7 +30,8 @@ const {user , createUser}=useContext(AuthContext)
         //         const user = result.user;
         //         console.log(user);
         //         Swal.fire({
-        //             title: 'User Login Successful.',        
+        //             title: 'User Login Successful.',
+        
         //         });
         //     })
     }
